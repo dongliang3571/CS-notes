@@ -15,3 +15,22 @@ Even without any swapping, you particularly need to be aware of virtual memory i
 
 Any raw memory addresses you pass to the hardware are physical, not virtual.
 Any large (multi page) blocks of memory you send are physically contiguous. An 8K array might be virtually contiguous (through the MMU) but two physically separate pages. If you tell the device to write 8K of data to the physical address corresponding to the start of that array, it will write the first 4K where you expect, but the second 4K will corrupt some memory somewhere. 
+
+### Data Structure, abstract data type
+
+In computer science, a data structure is a particular way of organizing data in a computer so that it can be used efficiently.
+
+Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computational complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.
+
+Examples of data structure:
+
+  - array
+  - list
+  - record(tuplem struct)
+  - class (A class is a data structure that contains data fields, like a record, as well as various methods which operate on the contents of the record.)
+  - heap
+  
+Examples of abstract data type:
+  - Stack
+  - Queue
+  - Priority Queue
