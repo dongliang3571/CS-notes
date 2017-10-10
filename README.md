@@ -152,3 +152,7 @@ public class RobsHashMap {
     }
 }
 ```
+
+### Different hashmap implementation
+
+http://www.cs.rmit.edu.au/online/blackboard/chapter/05/documents/contribute/chapter/05/linear-probing.html
