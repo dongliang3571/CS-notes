@@ -16,6 +16,22 @@ Even without any swapping, you particularly need to be aware of virtual memory i
 Any raw memory addresses you pass to the hardware are physical, not virtual.
 Any large (multi page) blocks of memory you send are physically contiguous. An 8K array might be virtually contiguous (through the MMU) but two physically separate pages. If you tell the device to write 8K of data to the physical address corresponding to the start of that array, it will write the first 4K where you expect, but the second 4K will corrupt some memory somewhere. 
 
+### Concurrency, Parallelism
+
+This great talk Rob Pike - ('Concurrency Is Not Parallelism')[https://vimeo.com/49718712] shall answer your question. He was talking mostly about concurrency in Go, but the concept of concurrency (and its difference to parallelism) was well conveyed. Very recommended to watch.
+
+"Concurrency is about dealing with lots of things at once. Parallelism is about doing lots of things at once." - Rob Pike
+
+Concurrency: You are running an operating system, in which you can have independent drivers inside the kernel (mouse driver, keyboard driver, display driver, etc). Those are not necessarily being run in parallel. If you only have one processor, only one can be run at a time, and it will still be able to run without any problem.
+
+Parallelism: You want to convert a colored image to black and white. The job can be done by calculating each pixel's RGB value to average of its neighbors. Since you can divide the task to smaller subtask (for example, each core is responsible to calculate specific region of the image), you can run them in parallel with multi-core CPU/GPU.
+
+Three pairs of antonyms:
+
+- Parallel is the opposite of serial.
+- Concurrent is the opposite of sequential.
+- Vector is the opposite of scalar.
+
 ### Data Structure, abstract data type
 
 In computer science, a data structure is a particular way of organizing data in a computer so that it can be used efficiently.
