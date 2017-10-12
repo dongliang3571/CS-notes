@@ -36,6 +36,8 @@ Three pairs of antonyms:
 
 http://www.geeksforgeeks.org/mutex-vs-semaphore/
 
+https://stackoverflow.com/questions/4039899/when-should-we-use-mutex-and-when-should-we-use-semaphore
+
 Using Mutex:
 
 A mutex provides mutual exclusion, either producer or consumer can have the key (mutex) and proceed with their work. As long as the buffer is filled by producer, the consumer needs to wait, and vice versa.
