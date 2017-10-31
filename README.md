@@ -1,5 +1,21 @@
 # CS-notes
 
+### 
+
+Difference between HTTP and Socket Connection
+
+HTTP Connection
+
+HTTP connection is a protocol that runs on a socket.
+HTTP connection is a higher-level abstraction of a network connection.
+With HTTP connection the implementation takes care of all these higher-level details and simply send HTTP request (some header information) and receive HTTP response from the server.
+
+Socket Connection
+
+Socket is used to transport data between systems. It simply connects two systems together, an IP address is the address of the machine over an IP based network.
+With socket connection you can design your own protocol for network connection between two systems.
+With Socket connection you need to take care of all the lower-level details of a TCP/IP connection.
+
 ### Virtual memory
 
 Virtual memory is a layer of abstraction provided to each process. The computer has, say, 2GB of physical RAM, addressed from 0 to 2G. A process might see an address space of 4GB, which it has entirely to itself. The mapping from virtual addresses to physical addresses is handled by a memory management unit, which is managed by the operating system. Typically this is done in 4KB "pages".
