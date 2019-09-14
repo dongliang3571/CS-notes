@@ -49,9 +49,7 @@ public static int binary_search_leftmost(int[] nums, int target) {
 }       
 ```
 
-### 
-
-Difference between HTTP and Socket Connection
+### Difference between HTTP and Socket Connection
 
 HTTP Connection
 
