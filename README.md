@@ -1,5 +1,54 @@
 # CS-notes
 
+## Algorithm
+
+### Binary Search
+
+```c#
+
+// find leftmost when there are duplicates targets
+public static int binary_search_leftmost(int[] nums, int target) {
+    // Note that r == nums.Length rather than nums.Length - 1 
+    // This helps when duplicated targets are in the last position of the array. for examples, [3], [3, 3]
+    // normal binary search uses r = nums.Length - 1
+    int l = 0, r = nums.Length;  
+    int mid;
+
+    while (l < r) {
+        mid = (r + l)/2; // this is equivalent to Math.Floor((r + l)/2), hence we use l = mid + 1. For example when l == 1, r == 2, (l + r)/2 = (1+2)/2 = 1, if we do l = mid, l will stay the same forever, so we use l = mid + 1.
+
+        if (nums[mid] < target) {
+            l = mid + 1; // if we use Math.Ceiling((r + l)/2)
+        } else { // else includes nums[mid] >= target, = is important here, because this way, r is moving to left more
+            r = mid;
+        }
+    }
+
+    return l;
+}
+
+// find rightmost when there are duplicates targets
+public static int binary_search_leftmost(int[] nums, int target) {
+    // Note that r == nums.Length rather than nums.Length - 1 
+    // This helps when duplicated targets are in the last position of the array. for examples, [3], [3, 3]
+    // normal binary search uses r = nums.Length - 1
+    int l = 0, r = nums.Length;  
+    int mid;
+
+    while (l < r) {
+        mid = (r + l)/2; // this is equivalent to Math.Floor((r + l)/2), hence we use l = mid + 1
+
+        if (nums[mid] > target) {
+            r = mid;
+        } else { // else includes nums[mid] <= target, = is important here, because this way, l is moving to right more
+            l = mid + 1;
+        }
+    }
+
+    return l-1;
+}       
+```
+
 ### 
 
 Difference between HTTP and Socket Connection
