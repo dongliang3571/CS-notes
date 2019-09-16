@@ -2,6 +2,10 @@
 
 ## Algorithm
 
+### Sorting
+
+https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html
+
 ### Binary Search
 
 ```c#
