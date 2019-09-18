@@ -52,7 +52,10 @@ public static int binary_search_leftmost(int[] nums, int target) {
     }
 
     return l-1;
-}       
+}
+
+
+// using r = nums.Length can accommodate when input array is size of one and while lopp is (l < r), for examples, [1]
 ```
 
 ### Difference between HTTP and Socket Connection
