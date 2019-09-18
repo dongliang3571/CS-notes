@@ -8,6 +8,8 @@ https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.ht
 
 ### Binary Search
 
+https://leetcode.com/explore/learn/card/binary-search
+
 ```c#
 
 // find leftmost when there are duplicates targets
