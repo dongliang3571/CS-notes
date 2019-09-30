@@ -2,6 +2,10 @@
 
 ## Algorithm
 
+### Dynamic programming
+
+https://medium.com/@yashgirdhar/intuition-behind-largest-subsequence-problems-3f82c8b4ba41
+
 ### Priority Queue
 
 https://www.geeksforgeeks.org/priority-queue-set-1-introduction/
