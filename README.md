@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=HqPJF2L5h9U
 - Heaps are complete binary trees
 - A binary tree can be represented as an array with left child being `i2`, right child being `i2+1` and parent being `floor(i/2)` where i is the index of the element in the array(starting from index 1). If we the starting index is 0, then left child will be `i2+1`, right child will be `i2+2`, parent will be `floor(i-1)/2`. And heaps are typically built with arrays.
 - Insertion takes O(logn), Deletion takes O(logn)
-- Heapify is a way of creating a heap from an array, it takes `O(n)`(siftDown is faster than siftUp). If you simply using insertion to creation a heap, it will take `O(nlogn)` as each insertion takes logn and there are n elements.
+- Heapify is a way of creating a heap from an array, single heapify operation takes `O(logn)`, however, total time it takes for build a heap suing heapify is `O(n)`(siftDown is faster than siftUp, https://www.geeksforgeeks.org/time-complexity-of-building-a-heap/). If you simply using normal insertion to create a heap, it will take `O(nlogn)` as each insertion takes logn and there are n elements.
 
 ### Linked list cycle
 
